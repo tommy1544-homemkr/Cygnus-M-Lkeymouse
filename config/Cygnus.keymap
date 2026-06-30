@@ -18,9 +18,16 @@
     combos {
         compatible = "zmk,combos";
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <21 22>;
+            require-prior-idle-ms = <125>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <22 23>;
+            require-prior-idle-ms = <125>;
         };
     };
 
